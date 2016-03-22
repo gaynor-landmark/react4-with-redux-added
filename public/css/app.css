@@ -1,0 +1,37 @@
+body {
+  padding: 50px;
+  font-size: 20px;
+
+  font-family: 'Short Stack', cursive;
+
+}
+
+a {
+  color: #00B7FF;
+}
+
+div.animal {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+
+}
+
+div.animal:hover {
+    border: 3px solid #777;
+}
+
+div.animal img {
+    width: 100%;
+    height: auto;
+}
+
+div.animal .sound {
+    padding: 15px;
+    text-align: center;
+}
+div.animal .name {
+    padding: 15px;
+    text-align: center;
+}
