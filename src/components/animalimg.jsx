@@ -2,6 +2,7 @@
 import React from 'react'
 
 module.exports = React.createClass({
+
  handleClick: function(e){
  console.log("handling", this.props.name)
   this.props.check(this.props.name)

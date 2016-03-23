@@ -1,6 +1,6 @@
 'use strict'
 import React from 'react'
-import store from '../../store.js'
+
 import WordList from './wordlist.jsx'
 import PicList from './piclist.jsx'
 import {setAnimalToFound} from '../actions/index.js'
@@ -9,7 +9,7 @@ import {setAnimalToFound} from '../actions/index.js'
 module.exports = React.createClass({
 
   check: function (name) {
-    var state = store.getState()
+    var state = this.props.store.getState()
     console.log("st cn nm", state.checkname, name)
     if (name === state.checkname){
       this.props.store.dispatch({type:'animalfound', name: name})
@@ -21,9 +21,9 @@ module.exports = React.createClass({
   },
 
   render: function () {
-    console.log("render app.js with props.state", this.props.state, this.props.store)
-    var state = store.getState()
-    console.log(state.checkname)
+
+    var state = this.props.store.getState()
+  console.log("render app.js with props", state.checkname, state.piclist)
     return (
       <div>
         <div>
