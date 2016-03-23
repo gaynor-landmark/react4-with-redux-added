@@ -15,6 +15,7 @@ module.exports = React.createClass({
       this.props.store.dispatch({type:'animalfound', name: name})
 
     } else {
+
       console.log("nOOOOO")
     }
 
@@ -25,7 +26,7 @@ module.exports = React.createClass({
     var state = this.props.store.getState()
   console.log("render app.js with props", state.checkname, state.piclist)
     return (
-      <div>
+      <div id='flexApp'>
         <div>
           <WordList checkname={state.checkname}/>
         </div>

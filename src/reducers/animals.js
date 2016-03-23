@@ -7,13 +7,21 @@ const initialState = {
   {name:'duck', found:false},
   {name:'bee', found:false},
   {name:'cow', found:false},
-  {name:'cat', found:false}
+  {name:'cat', found:false},
+  {name:'kiwi', found:false},
+  {name:'lion', found:false},
+  {name:'dog', found:false},
+  {name:'pig', found:false},
 ],
   piclist : [
     {name:'duck', img:'./images/duck.jpg', sound:'quack', found:false},
+    {name:'kiwi', img:'./images/kiwi.jpg', sound:'sqwark', found:false},
     {name:'cat', img:'./images/cat.jpg', sound:'meow', found:false},
+    {name:'lion', img:'./images/lion.jpg', sound:'roar', found:false},
     {name:'bee', img:'./images/bee.jpg', sound:'buzz', found:false},
-    {name:'cow', img:'./images/cow.jpg', sound:'moo', found:false}
+    {name:'cow', img:'./images/cow.jpg', sound:'moo', found:false},
+    {name:'pig', img:'./images/pig.jpg', sound:'oink', found:false},
+    {name:'dog', img:'./images/dog.jpg', sound:'woof', found:false}
   ],
   checkname : 'duck'
 }
@@ -38,7 +46,7 @@ export default function animals(state = initialState, action){
       })
       console.log("new", newpiclist)
       var set = false
-      var newcheckname = state.checkname
+      var newcheckname = "all"
       newwordlist.map(function(word){
         if (word.found === false && set === false){
           newcheckname = word.name
