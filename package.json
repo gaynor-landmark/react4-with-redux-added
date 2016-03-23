@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:watch": "watchify src/index.js -o public/bundle.js -t [ babelify --presets [ es2015 react stage-0 ] ] -dv",
-    "dev:live-reload": "live-reload public/ --port 3000 --delay=1000",
+    "live-reload": "live-reload public/ --port 3000 --delay=1000",
     "createDB": "node ./data/createDB.js",
     "dev:start": "nodemon ./server/index.js",
     "start": "NODE_ENV=development npm-run-all -p dev:*"
