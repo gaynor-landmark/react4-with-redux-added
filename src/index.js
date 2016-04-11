@@ -10,11 +10,7 @@ domready(function () {
   var store = createStore(animals)
   console.log(store.getState())
   function renderApp () {
-    render(
-      (
-        <App store={store} />
-      ), document.querySelector('#app'))
-
+    render((<App store={store} />), document.querySelector('#app'))
   }
   store.subscribe(renderApp)
   renderApp()

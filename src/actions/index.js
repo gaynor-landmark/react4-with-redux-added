@@ -1,8 +1,7 @@
-export default function setAnimalToFound (name){
-
-  console.log('in setAnimalT')
+export default function setAnimalToFound (name) {
+  console.log('in setAnimalToFound')
   return {
-      type: 'animalfound',
-      name
-    }
+    type: 'animalfound',
+    name
+  }
 }

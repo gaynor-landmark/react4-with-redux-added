@@ -5,7 +5,7 @@ module.exports = React.createClass({
 
   render: function () {
     return (
-      <div className="sound">
+      <div className='sound'>
         {this.props.sound}
       </div>
     )

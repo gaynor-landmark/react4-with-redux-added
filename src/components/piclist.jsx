@@ -10,7 +10,7 @@ module.exports = React.createClass({
     var check = this.props.check
     return (
       <div id='pics' >
-        {animals.map(function(a){
+        {animals.map(function (a) {
           return <Animal name={a.name} img={a.img} sound={a.sound} found={a.found} check={check} />
         })}
       </div>

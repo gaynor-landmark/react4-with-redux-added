@@ -3,28 +3,22 @@ import React from 'react'
 
 import WordList from './wordlist.jsx'
 import PicList from './piclist.jsx'
-import {setAnimalToFound} from '../actions/index.js'
-
 
 module.exports = React.createClass({
 
   check: function (name) {
     var state = this.props.store.getState()
-    console.log("st cn nm", state.checkname, name)
-    if (name === state.checkname){
-      this.props.store.dispatch({type:'animalfound', name: name})
-
+    console.log('st cn nm', state.checkname, name)
+    if (name === state.checkname) {
+      this.props.store.dispatch({type: 'animalfound', name: name})
     } else {
-
-      console.log("nOOOOO")
+      console.log('nOOOOO')
     }
-
   },
 
   render: function () {
-
     var state = this.props.store.getState()
-  console.log("render app.js with props", state.checkname, state.piclist)
+    console.log('render app.js with props', state.checkname, state.piclist)
     return (
       <div id='flexApp'>
         <div>
@@ -35,7 +29,5 @@ module.exports = React.createClass({
         </div>
       </div>
     )
-
   }
-
 })
