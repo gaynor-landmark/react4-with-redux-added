@@ -9,7 +9,7 @@
     "dev:watch": "watchify src/index.js -o public/bundle.js -t [ babelify --presets [ es2015 react stage-0 ] ] -dv",
     "live-reload": "live-reload public/ --port 3000 --delay=1000",
     "dev:start": "nodemon ./server/index.js",
-    "start": "NODE_ENV=development npm-run-all -p dev:*"
+    "start": "node ./server/index.js"
   },
   "engines": {
     "node": "5.5.0"
