@@ -5,7 +5,9 @@ body {
   font-family: 'Short Stack', cursive;
 
 }
-
+h1 {
+  font-size: 50px;
+}
 a {
   color: #00B7FF;
 }

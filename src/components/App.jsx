@@ -21,6 +21,7 @@ module.exports = React.createClass({
     console.log('render app.js with props', state.checkname, state.piclist)
     return (
       <div id='flexApp'>
+        <h1>Duck Duck Quack</h1>
         <div>
           <WordList checkname={state.checkname}/>
         </div>
