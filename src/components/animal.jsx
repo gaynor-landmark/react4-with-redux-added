@@ -13,7 +13,7 @@ module.exports = React.createClass({
         <div>
           <div className='animal'>
             <AnimalName name={this.props.name}/>
-            <AnimalImage img={this.props.img} name={this.props.name} check={this.props.check}/>
+            <AnimalImage img={this.props.img} name={this.props.name} check={this.props.check} soundFile={this.props.soundFile}/>
             <AnimalSound sound={this.props.sound}/>
           </div>
         </div>
@@ -22,7 +22,7 @@ module.exports = React.createClass({
       return (
         <div>
           <div className='animal'>
-            <AnimalImage img={this.props.img} name={this.props.name} check={check}/>
+            <AnimalImage img={this.props.img} name={this.props.name} check={check} soundFile={this.props.soundFile}/>
           </div>
         </div>
       )

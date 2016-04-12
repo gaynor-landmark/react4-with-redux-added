@@ -11,7 +11,7 @@ module.exports = React.createClass({
     return (
       <div id='pics' >
         {animals.map(function (a) {
-          return <Animal name={a.name} img={a.img} sound={a.sound} found={a.found} check={check} />
+          return <Animal name={a.name} img={a.img} sound={a.sound} found={a.found} check={check} soundFile={a.soundFile}/>
         })}
       </div>
     )

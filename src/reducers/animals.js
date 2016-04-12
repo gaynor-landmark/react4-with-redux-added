@@ -8,20 +8,18 @@ const initialState = {
   {name: 'bee', found: false},
   {name: 'cow', found: false},
   {name: 'cat', found: false},
-  {name: 'kiwi', found: false},
   {name: 'lion', found: false},
   {name: 'dog', found: false},
   {name: 'pig', found: false}
   ],
   piclist: [
-    {name: 'duck', img: './images/duck.jpg', sound: 'quack', found: false},
-    {name: 'kiwi', img: './images/kiwi.jpg', sound: 'sqwark', found: false},
-    {name: 'cat', img: './images/cat.jpg', sound: 'meow', found: false},
-    {name: 'lion', img: './images/lion.jpg', sound: 'roar', found: false},
-    {name: 'bee', img: './images/bee.jpg', sound: 'buzz', found: false},
-    {name: 'cow', img: './images/cow.jpg', sound: 'moo', found: false},
-    {name: 'pig', img: './images/pig.jpg', sound: 'oink', found: false},
-    {name: 'dog', img: './images/dog.jpg', sound: 'woof', found: false}
+    {name: 'duck', img: './images/duck.jpg', sound: 'quack', found: false, soundFile: './sounds/duck.wav'},
+    {name: 'cat', img: './images/cat.jpg', sound: 'meow', found: false, soundFile: './sounds/cat.wav'},
+    {name: 'lion', img: './images/lion.jpg', sound: 'roar', found: false, soundFile: './sounds/lion.wav'},
+    {name: 'bee', img: './images/bee.jpg', sound: 'buzz', found: false, soundFile: './sounds/bee.wav'},
+    {name: 'cow', img: './images/cow.jpg', sound: 'moo', found: false, soundFile: './sounds/cow.wav'},
+    {name: 'pig', img: './images/pig.jpg', sound: 'oink', found: false, soundFile: './sounds/pig.wav'},
+    {name: 'dog', img: './images/dog.jpg', sound: 'woof', found: false, soundFile: './sounds/dog.wav'}
   ],
   checkname: 'duck'
 }
