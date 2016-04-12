@@ -1,17 +1,17 @@
 body {
   padding: 50px;
   font-size: 30px;
-
   font-family: 'Short Stack', cursive;
+  width: auto;
 
 }
 h1 {
   font-size: 50px;
+  text-align: center;
 }
 a {
   color: #00B7FF;
 }
-
 
 div.animal {
     margin: 5px;
