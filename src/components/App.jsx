@@ -22,6 +22,7 @@ module.exports = React.createClass({
     return (
       <div id='flexApp'>
         <h1>Duck Duck Quack</h1>
+        <h2>A simple game for children built with React.js and Redux</h2>
         <div>
           <WordList checkname={state.checkname}/>
         </div>
